@@ -15,7 +15,7 @@ public class MyDatePickerDialog
 
 
 
-    private void showDatePickerDialog(AppCompatActivity appCompatActivity,final DatePickerCallbacks datePickerCallbacks)
+    public void showDatePickerDialog(AppCompatActivity appCompatActivity,final DatePickerCallbacks datePickerCallbacks)
     {
         final Calendar c = Calendar.getInstance();
         mYear = c.get(Calendar.YEAR);

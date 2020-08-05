@@ -7,22 +7,6 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 public class AlertDialogs
 {
-
-
-
-//    private void getData()
-//    {
-//        alertDialog(, "", "", "", "", new DialogCallBacks() {
-//            @Override
-//            public void getDialogEvent( String buttonPressed)
-//            {
-//
-//            }
-//        });
-//    }
-
-
-
     public void alertDialog(AppCompatActivity appCompatActivity, String title, String message, final String positiveButton, final String negativeButton, final DialogCallBacks callBacks)
     {
         AlertDialog.Builder builder1 = new AlertDialog.Builder(appCompatActivity);
@@ -53,12 +37,5 @@ public class AlertDialogs
         AlertDialog alert11 = builder1.create();
         alert11.show();
     }
-
-
-
-
-
-
-
 
 }

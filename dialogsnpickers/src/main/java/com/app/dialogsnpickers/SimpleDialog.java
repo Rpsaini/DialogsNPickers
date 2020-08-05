@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
       //WindowManager.LayoutParams.MATCH_PARENT                     Dialog Hieght
       //
     private Dialog simpledialog;
-    private Dialog simpleDailog(AppCompatActivity appCompatActivity, int view,ColorDrawable colorDrawable,int dialogWidth,int dialogHeight)
+    public Dialog simpleDailog(AppCompatActivity appCompatActivity, int view,ColorDrawable colorDrawable,int dialogWidth,int dialogHeight)
     {
        if (simpledialog != null && simpledialog.isShowing()) {
             simpledialog.dismiss();
