@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
       //WindowManager.LayoutParams.MATCH_PARENT                     Dialog Hieght
       //
     private Dialog simpledialog;
-    public Dialog simpleDailog(AppCompatActivity appCompatActivity, int view,ColorDrawable colorDrawable,int dialogWidth,int dialogHeight)
+    public Dialog simpleDailog(AppCompatActivity appCompatActivity, int view,ColorDrawable colorDrawable,int dialogWidth,int dialogHeight,boolean setCancelable)
     {
        if (simpledialog != null && simpledialog.isShowing()) {
             simpledialog.dismiss();
@@ -27,7 +27,7 @@ import androidx.appcompat.app.AppCompatActivity;
         WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
         Window window = simpledialog.getWindow();
         lp.copyFrom(window.getAttributes());
-        simpledialog.setCancelable(false);
+        simpledialog.setCancelable(setCancelable);
         lp.width = dialogWidth;
         lp.height = dialogHeight;
         window.setAttributes(lp);
