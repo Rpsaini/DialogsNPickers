@@ -40,7 +40,7 @@ public class MyDatePickerDialog
 
 
 
-    private void showTimePicker(AppCompatActivity appCompatActivity,final TimePickerCallback timePickerCallback)
+    public void showTimePicker(AppCompatActivity appCompatActivity,final TimePickerCallback timePickerCallback)
     {
         final Calendar c = Calendar.getInstance();
         mHour = c.get(Calendar.HOUR_OF_DAY);
