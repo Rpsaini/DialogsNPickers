@@ -25,6 +25,7 @@ public class ShareDialog
             dialog.setMessage("Please wait...");
             dialog.setIndeterminate(true);
             dialog.setCanceledOnTouchOutside(false);
+            dialog.show();
 
             Intent shareIntent = new Intent(Intent.ACTION_SEND);
             shareIntent.setType("text/plain");
